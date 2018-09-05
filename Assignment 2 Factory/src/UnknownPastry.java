@@ -1,6 +1,6 @@
 
-public class UnkownPastry extends Pastry{
-	public UnkownPastry() {
+public class UnknownPastry extends Pastry{
+	public UnknownPastry() {
 		description = "An unknown pastry";
 	}
 	
