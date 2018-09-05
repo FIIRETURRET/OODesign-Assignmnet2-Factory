@@ -37,6 +37,18 @@ public class Assignment {
 			pastry = new UnkownPastry();
 		}
 		
+		//NEW
+		System.out.println("Welcome to the dungeon run pick a Rune. "
+				+ "\n 1.Water:"
+				+ "\n 2.Scone:"
+				+ "\n 3.Creme Puff");
+		s = br.readLine();
+		if (s.equals("1")) {
+			System.out.println("You have chosen Pie, Huzza!\n");
+			pastry = new WaterEnchantedPie();
+		}
+		
+		
 		// encounter 1, TODO: randomize the encounters.
 		pastry = new Apple(pastry);
 		System.out.println(pastry.getEncounter());

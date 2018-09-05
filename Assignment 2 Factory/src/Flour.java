@@ -36,4 +36,10 @@ public class Flour extends BakingDecorator{
 	public double cost() {
 		return pastry.cost() + score;
 	}
+
+	@Override
+	void prepare() {
+		// TODO Auto-generated method stub
+		
+	}
 }
