@@ -13,6 +13,6 @@ public abstract class Pastry {
 	abstract void prepare();
 	
 	void bake() {
-		System.out.print("Brewing concoction...");
+		System.out.print("Brewing concoction...\n");
 	}
 }
