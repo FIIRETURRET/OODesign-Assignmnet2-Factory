@@ -9,4 +9,10 @@ public abstract class Pastry {
 	public abstract double cost() ;
 	public abstract String getEncounter();
 	public abstract void solveEncounter(String s);
+	
+	abstract void prepare();
+	
+	void bake() {
+		System.out.print("Brewing concoction...");
+	}
 }

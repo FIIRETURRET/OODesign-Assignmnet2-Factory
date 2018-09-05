@@ -5,6 +5,11 @@ import java.io.InputStreamReader;
 public class Assignment {
 
 	public static void main(String[] args) throws IOException{
+		//NEW
+		PastryStore waterEnchantedStore = new WaterEnchantedStore();
+		Pastry pastry2 = waterEnchantedStore.orderPastry("Pie");
+		System.out.println("Brandon ordered a " + pastry2.getDescription());
+		
 		// TODO Auto-generated method stub
 		Pastry pastry = new Pie();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

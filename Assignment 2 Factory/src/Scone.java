@@ -19,4 +19,9 @@ public class Scone extends Pastry{
 		// TODO Auto-generated method stub
 		
 	}
+	
+	void prepare() {
+		System.out.println("Prepairing Scone");
+		
+	}
 }

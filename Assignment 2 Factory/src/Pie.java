@@ -19,4 +19,9 @@ public class Pie extends Pastry{
 		// TODO Auto-generated method stub
 		
 	}
+
+	void prepare() {
+		System.out.println("Prepairing Pie");
+		
+	}
 }
