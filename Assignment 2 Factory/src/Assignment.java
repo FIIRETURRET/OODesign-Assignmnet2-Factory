@@ -10,17 +10,13 @@ public class Assignment {
 		PastryStore SconeStore = new SconeStore();
 		PastryStore CremePuffStore = new CremePuffStore();
 		PastryStore UnknownPastryStore = new UnknownPastryStore();
-		//Pastry pastry2 = PieStore.orderPastry();
-		//System.out.println("Brandon ordered a " + pastry2.getDescription());
-		
-		// TODO Auto-generated method stub
 		Pastry pastry = new Pie();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		System.out.println("Welcome to the dungeon run pick a class. "
 				+ "\n 1.Pie:"
 				+ "\n 2.Scone:"
-				+ "\n 3.Creme Puff");
+				+ "\n 3.Creme Puff:");
 		String s = br.readLine();
 		if (s.equals("1")) {
 			System.out.println("You have chosen Pie, Huzza!\n");
@@ -40,18 +36,6 @@ public class Assignment {
 					+ "Very well... we shall push forward.\n");
 			pastry = UnknownPastryStore.orderPastry();
 		}
-		
-		//NEW
-		/*System.out.println("Welcome to the dungeon run pick a Rune. "
-				+ "\n 1.Water:"
-				+ "\n 2.Scone:"
-				+ "\n 3.Creme Puff");
-		s = br.readLine();
-		if (s.equals("1")) {
-			System.out.println("You have chosen Pie, Huzza!\n");
-			pastry = new WaterEnchantedPie();
-		}*/
-		
 		
 		System.out.println("Congrats you have made " + pastry.getDescription() + ".\nFinal Score: " + pastry.cost() + " /16");
 	}
